@@ -12,10 +12,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Background="#FF04A0FF"/>
-        <Button Grid.Row="0" Name="BtnGoBack" Content="Назад" Click="BtnGoBack_Click" HorizontalAlignment="Left" Background="White" Height="30" Width="80" Margin="10" VerticalAlignment="Center"/>
+        <Grid Grid.Row="0" Background="Green"/>
+        <Button Grid.Row="0" Name="BtnGoBack" Content="Назад" Click="BtnGoBack_Click" HorizontalAlignment="Left" Background="White" Height="40" Width="120" Margin="10" VerticalAlignment="Center" FontSize="20"/>
         <TextBlock Grid.Row="0" Text="Сервис - Сотрудники" VerticalAlignment="Center" HorizontalAlignment="Right" 
-                   Margin="0 0 15 0"
+                   Margin="0 0 260 0"
                    FontSize="25" Foreground="Black"/>
         <Frame Grid.Row="1" Name="Frame" NavigationUIVisibility="Hidden" ContentRendered="Frame_ContentRendered"/>
 

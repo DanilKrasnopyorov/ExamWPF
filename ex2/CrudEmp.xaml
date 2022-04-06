@@ -5,13 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ex2"
       mc:Ignorable="d" 
+      Background="White"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CrudEmp">
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.7*"/>
@@ -25,19 +26,19 @@
         <TextBlock Text="Добавить/Изменить сотрудника" VerticalAlignment="Center"
                    HorizontalAlignment="Center" FontWeight="Bold" FontSize="25" Grid.ColumnSpan="3" Grid.Row="0"/>
 
-        <TextBlock Text="ФИО" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBlock Text="ФИО" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         <TextBox Grid.Row="1" Text="{Binding FIO}" Grid.Column="2" Height="30" Width="auto" Margin="10"/>
 
-        <TextBlock Text="Номер телефона" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBlock Text="Номер телефона" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         <TextBox Grid.Row="2" Text="{Binding Phone}" Grid.Column="2" Height="30" Width="auto" Margin="10"/>
 
-        <TextBlock Text="E-mail" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBlock Text="E-mail" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         <TextBox Grid.Row="3" Text="{Binding Email}" Grid.Column="2" Height="30" Width="auto" Margin="10"/>
 
-        <TextBlock Text="Должность" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBlock Text="Должность" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         <ComboBox Name="cmbPosition" Grid.Row="4" SelectedItem="{Binding Positions}" SelectedValuePath="ID_Position" DisplayMemberPath="Name" Grid.Column="2" Height="30" Width="auto" Margin="10"/>
-
-        <Button x:Name="btnSave" Grid.Row="7" Grid.ColumnSpan="2" Content="Сохранить" Height="30" Width="100" 
-                VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnSave_Click"/>
+        <Grid Grid.Row="7" Grid.ColumnSpan="2" Background="Green"/>
+        <Button x:Name="btnSave" Grid.Row="7" Grid.ColumnSpan="2" Content="Сохранить" Height="40" Width="150" 
+                VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnSave_Click" FontSize="20"/>
     </Grid>
 </Page>
